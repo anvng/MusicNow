@@ -3,14 +3,14 @@ import 'package:music_now/core/theme/app_pallete.dart';
 import 'package:music_now/features/auth/view/widgets/auth_gradient_button.dart';
 import 'package:music_now/features/auth/view/widgets/custom_field.dart';
 
-class RegisterPage extends StatefulWidget {
-  const RegisterPage({super.key});
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
 
   @override
-  State<RegisterPage> createState() => _RegisterPageState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _RegisterPageState extends State<RegisterPage> {
+class _LoginPageState extends State<LoginPage> {
   final nameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
@@ -35,7 +35,7 @@ class _RegisterPageState extends State<RegisterPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                "Register",
+                "Login",
                 style: TextStyle(
                   fontSize: 50,
                   fontWeight: FontWeight.bold,
@@ -43,13 +43,6 @@ class _RegisterPageState extends State<RegisterPage> {
               ),
               const SizedBox(
                 height: 40,
-              ),
-              CustomField(
-                hintText: ' Name',
-                controller: nameController,
-              ),
-              const SizedBox(
-                height: 15,
               ),
               CustomField(
                 hintText: ' Email',
@@ -67,20 +60,20 @@ class _RegisterPageState extends State<RegisterPage> {
                 height: 25,
               ),
               const AuthGradientButton(
-                buttonText: 'Register',
+                buttonText: 'Login',
               ),
               const SizedBox(
                 height: 25,
               ),
               RichText(
                 text: TextSpan(
-                  text: "Already have an account? ",
+                  text: "You don't have an account? ",
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.primary,
                   ),
                   children: const [
                     TextSpan(
-                      text: "Login",
+                      text: "Register",
                       style: TextStyle(
                         color: AppPalette.gradient2,
                         fontWeight: FontWeight.bold,
