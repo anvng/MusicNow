@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:music_now/core/theme/app_pallete.dart';
 
 class AuthGradientButton extends StatelessWidget {
-  const AuthGradientButton({super.key});
+  final String buttonText;
+  const AuthGradientButton({super.key, required this.buttonText});
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +25,8 @@ class AuthGradientButton extends StatelessWidget {
                 borderRadius: BorderRadius.circular(50),
               ),
             ),
-            child: const Text('Register',
-                style: TextStyle(
+            child: Text(buttonText,
+                style: const TextStyle(
                     color: AppPalette.whiteColor,
                     fontSize: 20,
                     fontWeight: FontWeight.bold))));
