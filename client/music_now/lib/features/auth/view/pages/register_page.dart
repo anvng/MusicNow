@@ -66,8 +66,9 @@ class _RegisterPageState extends State<RegisterPage> {
               const SizedBox(
                 height: 25,
               ),
-              const AuthGradientButton(
+              AuthGradientButton(
                 buttonText: 'Register',
+                onTap: () {},
               ),
               const SizedBox(
                 height: 25,

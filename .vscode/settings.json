@@ -1,6 +1,8 @@
 {
-    "cSpell.words": [
-        "isobscure",
-        "pallete"
-    ]
+  "cSpell.words": [
+    "fastapi",
+    "isobscure",
+    "pallete",
+    "pydantic"
+  ]
 }
