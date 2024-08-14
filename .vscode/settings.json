@@ -1,8 +1,14 @@
 {
   "cSpell.words": [
+    "autoflush",
     "fastapi",
+    "gensalt",
+    "hashpw",
     "isobscure",
+    "musicnow",
     "pallete",
-    "pydantic"
+    "pydantic",
+    "sessionmaker",
+    "sqlalchemy"
   ]
 }
